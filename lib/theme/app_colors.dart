@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
+  AppColors._();
+
   static const Color appBarColor = Color(0xFF247BA0);
   static const Color scaffoldBackgroundColor = Color(0xFFF8FFF4);
   static const Map<String, Color> paintBoxColors = {
