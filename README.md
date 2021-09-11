@@ -1,6 +1,7 @@
-# color_transformation
+# color_toggling
 
 A new Flutter project.
+This project shows the all power of callbacks and lifting state up in Flutter.
 
 ## Getting Started
 
