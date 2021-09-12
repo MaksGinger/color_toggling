@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:color_transformation/theme/app_colors.dart';
+import 'package:flutter/material.dart';
 
 class ToggleColorButtons extends StatelessWidget {
   const ToggleColorButtons({
@@ -14,21 +14,22 @@ class ToggleColorButtons extends StatelessWidget {
     return SizedBox(
       height: 50,
       child: ListView.builder(
-          itemExtent: 130,
-          itemCount: AppColors.paintBoxColors.length,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, int index) {
-            final colorName = AppColors.paintBoxColors.keys.elementAt(index);
+        itemExtent: 130,
+        itemCount: AppColors.paintBoxColors.length,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, int index) {
+          final colorName = AppColors.paintBoxColors.keys.elementAt(index);
 
-            return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
-              child: _ToggleColorButton(
-                colorName: colorName,
-                backgroundColor: AppColors.paintBoxColors[colorName]!,
-                changeColorCallback: changeColorCallback,
-              ),
-            );
-          }),
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: _ToggleColorButton(
+              colorName: colorName,
+              backgroundColor: AppColors.paintBoxColors[colorName]!,
+              changeColorCallback: changeColorCallback,
+            ),
+          );
+        },
+      ),
     );
   }
 }
