@@ -21,21 +21,19 @@ class _AppColumnState extends State<AppColumn> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        ColorTransformBox(
-          width: 200,
-          height: 200,
-          backgroundColor: boxColor,
-          borderColor: Colors.black,
-        ),
-        ToggleColorButtons(
-          changeColorCallback: changeColor,
-        ),
-      ],
-    );
-  }
+  Widget build(BuildContext context) => Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          ColorTransformBox(
+            width: 200,
+            height: 200,
+            backgroundColor: boxColor,
+            borderColor: Colors.black,
+          ),
+          ToggleColorButtons(
+            changeColorCallback: changeColor,
+          ),
+        ],
+      );
 }

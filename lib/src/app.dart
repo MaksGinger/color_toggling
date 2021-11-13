@@ -6,30 +6,26 @@ class ColorTransformApp extends StatelessWidget {
   const ColorTransformApp({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Color App',
-      home: ColorTransformWidget(),
-    );
-  }
+  Widget build(BuildContext context) => const MaterialApp(
+        title: 'Color App',
+        home: ColorTransformWidget(),
+      );
 }
 
 class ColorTransformWidget extends StatelessWidget {
   const ColorTransformWidget({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Color transformation',
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Color transformation',
+          ),
+          backgroundColor: AppColors.appBarColor,
         ),
-        backgroundColor: AppColors.appBarColor,
-      ),
-      backgroundColor: AppColors.scaffoldBackgroundColor,
-      body: const Center(
-        child: AppColumn(),
-      ),
-    );
-  }
+        backgroundColor: AppColors.scaffoldBackgroundColor,
+        body: const Center(
+          child: AppColumn(),
+        ),
+      );
 }
