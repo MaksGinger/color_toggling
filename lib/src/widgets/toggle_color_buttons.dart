@@ -1,4 +1,4 @@
-import 'package:color_transformation/theme/app_colors.dart';
+import 'package:color_transformation/src/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class ToggleColorButtons extends StatelessWidget {

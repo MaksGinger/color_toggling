@@ -1,6 +1,6 @@
-import 'package:color_transformation/widgets/app_column.dart';
+import 'package:color_transformation/src/theme/app_colors.dart';
+import 'package:color_transformation/src/widgets/app_column.dart';
 import 'package:flutter/material.dart';
-import 'package:color_transformation/theme/app_colors.dart';
 
 class ColorTransformApp extends StatelessWidget {
   const ColorTransformApp({Key? key}) : super(key: key);

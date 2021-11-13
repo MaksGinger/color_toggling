@@ -1,6 +1,6 @@
+import 'package:color_transformation/src/widgets/color_transform_box.dart';
+import 'package:color_transformation/src/widgets/toggle_color_buttons.dart';
 import 'package:flutter/material.dart';
-import 'package:color_transformation/widgets/toggle_color_buttons.dart';
-import 'package:color_transformation/widgets/color_transform_box.dart';
 
 class AppColumn extends StatefulWidget {
   const AppColumn({
